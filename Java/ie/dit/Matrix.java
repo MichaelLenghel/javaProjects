@@ -99,7 +99,7 @@ public class Matrix {
     }
 
     //Public by default so removed keyword
-    static Matrix Add(Matrix a, Matrix b)
+    public static Matrix Add(Matrix a, Matrix b)
     {
 //        //Check if rows and cols are equal
 //        int rows = a.elements.length;
@@ -133,7 +133,7 @@ public class Matrix {
         return ans;
     }
 
-    static Matrix Mult(Matrix a, Matrix b)
+    public static Matrix Mult(Matrix a, Matrix b)
     {
         int rows, cols;
         //Don't need to assign separately as in multipling same no. of rows as cols
@@ -159,52 +159,4 @@ public class Matrix {
         }
         return ans;
     }
-
-    // static Matrix Vector2(float ele1, float ele2)
-    // {
-    //     Matrix ans = new Matrix(2, 0);
-    //     ans.identity();
-    //     ans.setElement(0, 0, ele1);
-    //     ans.setElement(1, 0, ele2);
-    //     ans.setElement(2, 0, 1);
-    //     return(ans);
-    // }//end this
-
-    // static Matrix Transform(Vector2 trans)
-    // {
-    //     Matrix ans = new Matrix(2, 0);
-    //     ans.identity();
-    //     return(ans);
-    // }
-
-    // static Matrix Translate(Vector2 vec2)
-    // {
-    //      for(int col = 0; col < cols; col++)
-    //         {
-    //             //In mult rows must be the same as columns
-    //             for(int i = 0; i < rows; i++)
-    //             {
-    //                 //ans.elements[row][col] += a.elements[row][i] * b.elements[i][col]
-    //                 ans.elements[row][i] += ans.elements[row][i] * vec2.elements[i][col];
-    //             }
-    //         }
-    //     return ans;
-    // }
-
-    // static Matrix Scaling(int x, int y)
-    // {
-    //     for (int i = 0;i < 3 ;i++ ) 
-    //     {
-    //         for (int j = 0;j < 3;j++ ) 
-    //         {
-                        
-    //         }    
-    //     }
-    //     return ans
-    // }
-
-    // static Matrix Rotate(float angle;)
-    // {
-    //     return 
-    // }
 }//end Matrix
