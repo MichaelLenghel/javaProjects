@@ -7,6 +7,7 @@ public class Dog extends Animal
 	
 	public void speak()
 	{
+		//Using accessor getNamefrom Animal to retreieve name
 		System.out.println(getName() + " says Woof!");
 	}	
 	

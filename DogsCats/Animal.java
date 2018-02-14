@@ -2,6 +2,7 @@ public class Animal
 {
 	private String name;
 	
+	//Accesor method
 	public String getName()
 	{
 		return name;

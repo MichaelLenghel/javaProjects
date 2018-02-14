@@ -1,32 +1,22 @@
-package ie.dit;
-
-import static ie.dit.Matrix.Add;
-import static ie.dit.Matrix.Mult;
+//package ie.dit;
 
 public class Main
 {
-    public static void main(String[] args)
+	public void Dictionary()
     {
-        Matrix m1 = new Matrix(3, 3);
-        m1.identity();
-        System.out.println(m1);
+        Dictionary d = new Dictionary();
+        String[] wordArr = Dictionary.copyToArray(d);
+        //System.out.println(d);
+        //d.withoutEnd()
 
-        Matrix m2 = new Matrix(3, 3);
-        m2.setElement(2, 1, 100);
-        m2.setElement(1, 1, 8);
-        System.out.println("\n" + m2.getElement(2, 1));
-        System.out.println("\n" + m2);
+    }
 
-        //First add function
-//        m2.add(m1);
-//        System.out.println(m2);
-
-        //Second add funciton
-        Matrix m3 = new Matrix(3, 3);
-//        m3 = Add(m1, m2);
-//        System.out.println(m3);
-
-        m3 = Mult(m1, m2);
-        System.out.println("\n" + m3);
+	public static void main(String[] args)
+    {
+        Main main = new Main();
+        //main.matrixMult();
+        //main.editDistance();
+        //main.Strings();
+        main.Dictionary();
     }
 }
