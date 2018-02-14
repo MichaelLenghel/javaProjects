@@ -7,7 +7,11 @@ public class Main
         Dictionary d = new Dictionary();
         String[] wordArr = Dictionary.copyToArray(d);
         //System.out.println(d);
-        //d.withoutEnd()
+        System.out.printf("\n\n");
+
+        Stringfxns strf = new Stringfxns();
+        String newStr = strf.withoutEnd(wordArr[1]);
+        System.out.println(newStr);
 
     }
 
